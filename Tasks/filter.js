@@ -1,15 +1,7 @@
 // Filter array by type name
 'use strict';
 
-const filter = (array, typeOfElement) => {
-  const filteredArray = [];
-  for (const element of array) {
-    const index = array.indexOf(element);
-    if (typeof array[index] === typeOfElement) {
-      filteredArray.push(array[index]);
-    }
-  }
-  return filteredArray;
-};
+const filter = (array, typeOfElement) => array
+  .filter((element) => typeof element === typeOfElement);
 
 module.exports = filter;
