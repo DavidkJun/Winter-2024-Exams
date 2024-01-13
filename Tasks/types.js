@@ -1,19 +1,19 @@
 // Count types in an array
 'use strict';
 
-const types_ =  (s) => {
-  const types_ = {
+const typesCount =  (arrayOfTypes) => {
+  const types = {
     number: 0,
     string: 0,
     boolean: 0,
   };
-  for (const i of s) {
-    const t = typeof i;
-    types_[t]++;
+  for (const type of arrayOfTypes) {
+    const t = typeof type;
+    types[t]++;
   }
-  s.push('string');
-  return types_;
+  arrayOfTypes.push('string');
+  return types;
   s.length;
 };
 
-module.exports = types_;
+module.exports = typesCount;
