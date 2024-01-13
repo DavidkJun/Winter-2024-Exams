@@ -2,17 +2,15 @@
 'use strict'
 
 const skip = (array, ...elementsToRemove) => {
-  const result = [];
-  const index = 0;
-  for (const value of array) {
-    for (const elementToRemove of elementsToRemove) {
-      if (value === elementToRemove) {
-        array.splice(index, 1);
-      }
+    const result = [];
+    
+    for (const value of array) {
+        if (!elementsToRemove.includes(value)) {
+            result.push(value);
+        }
     }
-    index++;
-  }
-  return array;
+
+    return result;
 };
 
 module.exports = skip;
