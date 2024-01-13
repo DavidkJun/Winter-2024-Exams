@@ -2,8 +2,9 @@
 'use strict';
 
 const getSample = (arr) => {
-  arr = arr[Math.floor(Math.random() * arr.length)];
-  return arr;
+let sampleIndex = 0;
+sampleIndex = Math.floor(Math.random() * arr.length);
+  return arr[sampleIndex];
 };
 
 module.exports = getSample;
