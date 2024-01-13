@@ -11,9 +11,9 @@ const typesCount =  (arrayOfTypes) => {
     const t = typeof type;
     types[t]++;
   }
-  arrayOfTypes.push('string');
+
   return types;
-  s.length;
+  
 };
 
 module.exports = typesCount;
