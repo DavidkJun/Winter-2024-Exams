@@ -1,8 +1,8 @@
 // Get month number
 'use strict'
 
-const months = ['jan','feb', 'mar','apr','may','jun','jul','aug','sep','oct','nov', 'dec',];
 const findMonth = (monthToFind) => {
+  const months = ['jan','feb', 'mar','apr','may','jun','jul','aug','sep','oct','nov', 'dec',];
   const numberOfMonths = months.length;
   for (let i = 0; i < numberOfMonths; i++) {
     if (monthToFind.toLowerCase().startsWith(months[i])) {
