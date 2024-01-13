@@ -1,14 +1,16 @@
 // Generate random password
 'use strict';
 
-const GeneratePassword = (alphabet, length) => {
-  const MAX = alphabet.length;
-  let key = '';
+const generatePassword = (alphabet, length) => {
+  
+  const maxLength = alphabet.length;
+  let password = '';
+
   for (let i = 0; i < length; i++) {
-    const Index = Math.floor(Math.random() * MAX);
-    key = key + alphabet[Index];
+    const index = Math.floor(Math.random() * maxLength);
+    password = password + alphabet[index];
   }
-  return key;
+  return password;
 };
 
-module.exports = GeneratePassword;
+module.exports = generatePassword;
