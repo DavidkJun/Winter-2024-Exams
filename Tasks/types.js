@@ -8,8 +8,7 @@ const typesCount =  (arrayOfTypes) => {
     boolean: 0,
   };
   for (const type of arrayOfTypes) {
-    const t = typeof type;
-    types[t]++;
+    types[typeof type]++;
   }
 
   return types;
