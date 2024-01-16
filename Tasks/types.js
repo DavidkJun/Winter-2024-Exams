@@ -7,7 +7,7 @@ const typesCount =  (arrayOfTypes) => {
     string: 0,
     boolean: 0,
   };
-  for (const type of arrayOfTypes) {
+  for (const value of arrayOfTypes) {
     types[typeof type]++;
   }
 
