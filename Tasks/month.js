@@ -4,10 +4,9 @@ const months = ['jan','feb', 'mar','apr','may','jun','jul','aug','sep','oct','no
 
 const findMonth = (monthToFind) => {
   const numberOfMonths = months.length;
-  for (let i = 0; i < numberOfMonths; i++) {
-    if (monthToFind.toLowerCase().startsWith(months[i])) {
-      return i + 1;
-    }
+  const lowered = monthToFind.toLowerCase()
+  for (const month of months) {
+    if (lowered.startsWith(month)) return months.indexOf(month) + 1;
   }
   return -1;
 };
